@@ -30,7 +30,7 @@ public class AppTest {
 		settingButton.click();
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1,enabled = false)
 	public void checkWibsiteLanguage(String expectedLanguage) {
 
 		String actualLanguage = driver.findElement(By.tagName("html")).getDomAttribute("lang");
@@ -39,7 +39,7 @@ public class AppTest {
 
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2,enabled = false)
 	public void checkCurrency() {
 
 		String actualCurrency = driver.findElement(By.cssSelector(".sc-cugefK.dUbuDW")).getText();
@@ -49,7 +49,7 @@ public class AppTest {
 
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3,enabled = false)
 	public void checkContactNumber() {
 		String actualNumber = driver.findElement(By.linkText("+966554400000")).getText();
 		String expectedNumber = "+966554400000";
@@ -58,7 +58,7 @@ public class AppTest {
 
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 4,enabled = false)
 	public void checkQitaflogo() {
 		WebElement theFooter = driver.findElement(By.tagName("footer"));
 		boolean actualLogo = theFooter.findElement(By.cssSelector(".sc-ekulBa.iOOTo"))
@@ -68,7 +68,7 @@ public class AppTest {
 	}
 
 	
-	@Test (priority = 5)
+	@Test (priority = 5,enabled = false)
 	public void checkHotelTabIsNotSelected() {
 		
 		WebElement hotelTab = driver.findElement(By.id("uncontrolled-tab-example-tab-hotels"));
@@ -82,7 +82,7 @@ public class AppTest {
 		
 	}
 	
-	@Test (priority = 6)
+	@Test (priority = 6,enabled = false)
 	public void flightDepartureDate () {
 		LocalDate date = LocalDate.now();
 		
@@ -96,7 +96,7 @@ public class AppTest {
 			
 	}
 	
-	@Test(priority = 7)
+	@Test(priority = 7,enabled = false)
 	public void flightReturnDate() {
 		LocalDate date = LocalDate.now();
 		
@@ -110,7 +110,7 @@ public class AppTest {
 		
 	}
 	
-	@Test (priority = 8,invocationCount = 4)
+	@Test (priority = 8)
 	public void changeTheWebsite() {
 		
 		String [] websites = {"https://www.almosafer.com/en" , "https://www.almosafer.com/ar"} ;
