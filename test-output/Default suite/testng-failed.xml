@@ -6,7 +6,7 @@
       <class name="finalProject.finalProject.AppTest">
         <methods>
           <include name="mySetup"/>
-          <include name="checkWibsiteLanguage"/>
+          <include name="checkThResultItsIsretrived"/>
           <include name="afterTheTest"/>
         </methods>
       </class> <!-- finalProject.finalProject.AppTest -->
