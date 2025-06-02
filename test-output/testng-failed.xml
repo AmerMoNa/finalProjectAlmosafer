@@ -6,8 +6,17 @@
       <class name="finalProject.finalProject.AppTest">
         <methods>
           <include name="mySetup"/>
+          <include name="checkQitaflogo"/>
+          <include name="checkCurrency"/>
+          <include name="hotelTab"/>
+          <include name="hotelSearchBox"/>
+          <include name="checkContactNumber"/>
           <include name="checkThResultItsIsretrived"/>
+          <include name="flightDepartureDate"/>
           <include name="afterTheTest"/>
+          <include name="checkHotelTabIsNotSelected"/>
+          <include name="flightReturnDate"/>
+          <include name="changeTheWebsite"/>
         </methods>
       </class> <!-- finalProject.finalProject.AppTest -->
     </classes>
